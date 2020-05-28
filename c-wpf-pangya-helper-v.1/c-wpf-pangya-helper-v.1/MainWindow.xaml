@@ -1,0 +1,86 @@
+﻿<Window x:Class="c_wpf_pangya_helper_v._1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:c_wpf_pangya_helper_v._1"
+        mc:Ignorable="d"
+       FontSize="11"
+        FontFamily="Roboto"
+        Foreground="White"
+        Title="MainWindow" Height="330" Width="280" ResizeMode="NoResize" Visibility="Visible" WindowStyle="ToolWindow">
+    <Window.Background>
+        <SolidColorBrush Color="#FFD1BCCB" Opacity="0.6"/>
+    </Window.Background>
+    <Grid>
+        <GroupBox Header="Degree" Height="65" Width="260"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0">
+            <Grid>
+                <Label Content="Angle-0°" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-160,0,0,0"/>
+                <Label Name="get_angle_degree_zero" Content="0°" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-80,0,0,0"/>
+                <Label Content="Angle-90°" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-160,20,0,0"/>
+                <Label Name="get_angle_degree_ninety" Content="0°" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-80,20,0,0"/>
+
+                <Label Content="Center-0°" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="100,0,0,0"/>
+                <Label Name="get_center_degree_zero" Content="0°" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="180,0,0,0"/>
+                <Label Content="Center-90°" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="100,20,0,0"/>
+                <Label Name="get_center_degree_ninety" Content="0°" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="180,20,0,0"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Pb / Pixel" Height="65" Width="100"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-160,80,0,0">
+            <Grid>
+                <Label Content="Pb" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-40,0,0,0"/>
+                <Label Name="get_pb" Content="0" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="40,0,0,0"/>
+                <Label Content="Pixel" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-40,20,0,0"/>
+                <Label Name="get_pixel" Content="0" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="40,20,0,0"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Spin/Curve" Height="65" Width="100"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="50,80,0,0">
+            <Grid>
+                <Label Content="Spin" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-40,0,0,0"/>
+                <Label Name="get_spin" Content="0" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="40,0,0,0"/>
+                <Label Content="Curve" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-40,20,0,0"/>
+                <Label Name="get_curve" Content="0" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="40,20,0,0"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Slope" Height="65" Width="50"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="210,80,0,0">
+            <Grid>
+                <Label Content="Pixel" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0"/>
+                <Label Name="get_pixel_slope"  Content="0" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Move Helper" Height="65" Width="260"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,150,0,0">
+            <Grid>
+                <Label Content="Spin" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-210,0,0,0"/>
+                <TextBox Name="set_spin" Text="0" Width="30" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-140,5,0,0"/>
+                <Button Content="Move" Width="40"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-50,4,0,0" Background="#FF4AFF53"/>
+
+                <Label Content="Curve" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-210,20,0,0"/>
+                <TextBox Name="set_curve" Text="0" Width="30" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-140,25,0,0"/>
+                <Button Content="Move" Width="40"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-50,24,0,0" Background="#FF4AFF53" />
+
+                <Label Content="Pb" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="25,0,0,0"/>
+                <TextBox Name="set_pb" Text="0" Width="40" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="95,5,0,0"/>
+                <Button Content="Move" Width="40"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="195,4,0,0" Background="#FFF14938"/>
+
+                <Label Content="Pixel" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="25,20,0,0"/>
+                <TextBox Name="set_pixel"  Text="0" Width="40" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="95,25,0,0"/>
+                <Button Content="Move" Width="40"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="195,24,0,0" Background="#FFF14938" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Calculator/4" Height="50" Width="130"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-130,220,0,0">
+            <Grid>
+                <TextBox Name="set_calculator" Text="0" Width="60" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-35,8,0,0"/>
+                <Label Name="get_calculator" Content="0" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="70,3,0,0"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Screen" Height="50" Width="130"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="130,220,0,0">
+            <Grid>
+                <ComboBox ItemsSource="{Binding screen}" IsEditable="True" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0"/>
+            </Grid>
+        </GroupBox>
+
+        <Label Name="get_position" Content="mouse_position" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,5,0"/>
+        <Label Content="By suki@dev" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="5,0,0,0"/>
+    </Grid>
+</Window>
