@@ -69,6 +69,13 @@
                 <Button Content="Move" Width="40"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="195,24,0,0" Background="#FFF14938" Click="pixel_move" />
             </Grid>
         </GroupBox>
+
+        <GroupBox Header="Power Bar" Height="50" Width="130"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-130,220,0,0">
+            <Grid>
+                <CheckBox Name="powerbar" Content="Powerbar" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-20,0,0,0"/>
+            </Grid>
+        </GroupBox>
+
         <GroupBox Header="Screen" Height="50" Width="130"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="130,220,0,0">
             <Grid>
                 <ComboBox Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
