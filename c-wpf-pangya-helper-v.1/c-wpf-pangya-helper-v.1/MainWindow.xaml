@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:c_wpf_pangya_helper_v._1"
         mc:Ignorable="d"
-       FontSize="11"
+        Loaded="Window_Loaded"
+        FontSize="11"
         FontFamily="Roboto"
         Foreground="White"
         Title="MainWindow" Height="330" Width="280" ResizeMode="NoResize" Visibility="Visible" WindowStyle="ToolWindow">
@@ -61,22 +62,32 @@
 
                 <Label Content="Pb" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="25,0,0,0"/>
                 <TextBox Name="set_pb" Text="0" Width="40" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="95,5,0,0"/>
-                <Button Content="Move" Width="40"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="195,4,0,0" Background="#FFF14938"/>
+                <Button Content="Move" Width="40"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="195,4,0,0" Background="#FFF14938" Click="pb_move"/>
 
                 <Label Content="Pixel" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="25,20,0,0"/>
                 <TextBox Name="set_pixel"  Text="0" Width="40" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="95,25,0,0"/>
-                <Button Content="Move" Width="40"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="195,24,0,0" Background="#FFF14938" />
-            </Grid>
-        </GroupBox>
-        <GroupBox Header="Calculator/4" Height="50" Width="130"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-130,220,0,0">
-            <Grid>
-                <TextBox Name="set_calculator" Text="0" Width="60" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-35,8,0,0"/>
-                <Label Name="get_calculator" Content="0" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="70,3,0,0"/>
+                <Button Content="Move" Width="40"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="195,24,0,0" Background="#FFF14938" Click="pixel_move" />
             </Grid>
         </GroupBox>
         <GroupBox Header="Screen" Height="50" Width="130"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="130,220,0,0">
             <Grid>
-                <ComboBox ItemsSource="{Binding screen}" IsEditable="True" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                <ComboBox Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
+                    <ComboBoxItem Name="s800x600">800x600</ComboBoxItem>
+                    <ComboBoxItem Name="s1024x768">1024x768</ComboBoxItem>
+                    <ComboBoxItem Name="s1280x960">1280x960</ComboBoxItem>
+                    <ComboBoxItem Name="s1280x720">1280x720</ComboBoxItem>
+                    <ComboBoxItem Name="s1280x768">1280x768</ComboBoxItem>
+                    <ComboBoxItem Name="s1280x800">1280x800</ComboBoxItem>
+                    <ComboBoxItem Name="s1366x768">1366x768</ComboBoxItem>
+                    <ComboBoxItem Name="s1400x900">1400x900</ComboBoxItem>
+                    <ComboBoxItem Name="s1440x990">1440x990</ComboBoxItem>
+                    <ComboBoxItem Name="s1400x1050">1400x1050</ComboBoxItem>
+                    <ComboBoxItem Name="s1440x900">1440x900</ComboBoxItem>
+                    <ComboBoxItem Name="s1440x1050">1440x1050</ComboBoxItem>
+                    <ComboBoxItem Name="s1600x900">1600x900</ComboBoxItem>
+                    <ComboBoxItem Name="s1680x1050">1680x1050</ComboBoxItem>
+                    <ComboBoxItem Name="s1920x1080">1920x1080</ComboBoxItem>
+                </ComboBox>
             </Grid>
         </GroupBox>
 

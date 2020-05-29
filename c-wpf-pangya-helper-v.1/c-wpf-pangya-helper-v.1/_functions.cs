@@ -58,12 +58,12 @@ namespace c_wpf_pangya_helper_v._1
 
         }
 
-        public Tuple<double, double> angle_degree(int xPos, int yPos)
+        public Tuple<double, double> angle_degree(int screenWidth, int yPos)
         {
             double x = position_pangya_screen().x;
             double y = position_pangya_screen().y;
 
-            double angle_degree_x = (x - (xPos / 2));
+            double angle_degree_x = (x - (screenWidth / 2));
             double angle_degree_y = (y - yPos);
 
             double radians = Math.Atan2(Math.Abs(angle_degree_y), Math.Abs(angle_degree_x));
@@ -76,13 +76,13 @@ namespace c_wpf_pangya_helper_v._1
             return Tuple.Create(angle_degree_0, angle_degree_90); // Item1 , Item2
         }
 
-        public Tuple<double, double> center_degree(int xPos, int yPos)
+        public Tuple<double, double> center_degree(int screenWidth, int screenHeight)
         {
             double x = position_pangya_screen().x;
             double y = position_pangya_screen().y;
 
-            double center_degree_x = (x - (xPos / 2));
-            double center_degree_y = (y - (yPos / 2));
+            double center_degree_x = (x - (screenWidth / 2));
+            double center_degree_y = (y - (screenHeight / 2));
 
             double radians = Math.Atan2(Math.Abs(center_degree_y), Math.Abs(center_degree_x));
             double degree = radians * (180 / Math.PI);
@@ -94,19 +94,19 @@ namespace c_wpf_pangya_helper_v._1
 
         }
 
-        public double get_pixel_value(int xPos) //xPos screen width
+        public double get_pixel_value(int screenWidth) //xPos screen width
         {
             double x = position_pangya_screen().x;
 
-            double get_pixel_value = Math.Abs((xPos / 2) - Math.Abs(x));
+            double get_pixel_value = Math.Abs((screenWidth / 2) - Math.Abs(x));
             return get_pixel_value;
         }
 
-        public double get_pb_value(int xPos, int pb_distance) //xPos screen width , 1pixel
+        public double get_pb_value(int screenWidth, int pb_distance) //xPos screen width , 1pixel
         {
             double x = position_pangya_screen().x;
 
-            double get_pixel_value = Math.Abs((xPos / 2) - Math.Abs(x));
+            double get_pixel_value = Math.Abs((screenWidth / 2) - Math.Abs(x));
 
             double get_pb_value = get_pixel_value / pb_distance;
             return get_pb_value;
@@ -127,7 +127,7 @@ namespace c_wpf_pangya_helper_v._1
 
         public void set_pb_move(double getPb, int pb_distance, int screenWidth, int screenHeight) // textbox.text (pb),1pixel,screenWidth,screenHeight
         {
-            double pixel = getPb + pb_distance;
+            double pixel = getPb * pb_distance;
             double xPos = (screenWidth / 2) + (pixel);
             POINT position = new POINT(Convert.ToInt32(xPos), screenHeight/2);
 
