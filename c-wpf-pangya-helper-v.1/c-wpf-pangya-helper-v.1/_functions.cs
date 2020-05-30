@@ -41,7 +41,6 @@ namespace c_wpf_pangya_helper_v._1
                 y = Y;
             }
         }
-
         public IntPtr hwnd()
         {
             IntPtr hwnd = FindWindow(null, "Pangya Fresh Up!");
@@ -129,14 +128,14 @@ namespace c_wpf_pangya_helper_v._1
         {
             double pixel = getPb * pb_distance;
             double xPos = (screenWidth / 2) + (pixel);
-            POINT position = new POINT(Convert.ToInt32(xPos), screenHeight/2);
+            POINT position = new POINT(Convert.ToInt32(xPos), screenHeight / 2);
 
             double width = SystemParameters.VirtualScreenWidth;
             double height = SystemParameters.VirtualScreenHeight;
 
             ClientToScreen(hwnd(), ref position);
             double convertedPointX = (position.x * 65535) / (width - 1);
-            double convertedPointY = (position.y * 65535) / (height -1);
+            double convertedPointY = (position.y * 65535) / (height - 1);
             mouse_event(MOUSEEVENTF_ABSOLUTE | MOUSEEVENTF_MOVE, Convert.ToInt32(convertedPointX), Convert.ToInt32(convertedPointY), 0, 0);
         }
 
