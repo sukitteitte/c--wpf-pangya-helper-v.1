@@ -23,6 +23,8 @@ namespace c_wpf_pangya_helper_v._1
     {
 
         _functions func = new _functions();
+        slope slope = new slope();
+        spin_curve sc = new spin_curve();
 
         public MainWindow()
         {
@@ -51,6 +53,8 @@ namespace c_wpf_pangya_helper_v._1
                 get_center_degree_zero.Content = string.Format("{0:0.##}", func.center_degree(800, 600).Item1);
                 get_center_degree_ninety.Content = string.Format("{0:0.##}", func.center_degree(800, 600).Item2);
 
+
+
                 if (isChecked == true)
                 {
                     get_pb.Content = string.Format("{0:0.##}", func.get_pb_value(800, 45));
@@ -72,6 +76,9 @@ namespace c_wpf_pangya_helper_v._1
 
                 get_center_degree_zero.Content = string.Format("{0:0.##}", func.center_degree(1024, 768).Item1);
                 get_center_degree_ninety.Content = string.Format("{0:0.##}", func.center_degree(1024, 768).Item2);
+
+                get_pixel_slope.Content = string.Format("{0}", slope.height_768());
+                sc.get_sc_768(get_spin, get_curve);
 
                 if (isChecked == true)
                 {
@@ -138,6 +145,9 @@ namespace c_wpf_pangya_helper_v._1
                 get_center_degree_zero.Content = string.Format("{0:0.##}", func.center_degree(1280, 768).Item1);
                 get_center_degree_ninety.Content = string.Format("{0:0.##}", func.center_degree(1280, 768).Item2);
 
+                get_pixel_slope.Content = string.Format("{0}", slope.height_768());
+                sc.get_sc_768(get_spin, get_curve);
+
                 if (isChecked == true)
                 {
                     get_pb.Content = string.Format("{0:0.##}", func.get_pb_value(1280, 58));
@@ -181,6 +191,9 @@ namespace c_wpf_pangya_helper_v._1
 
                 get_center_degree_zero.Content = string.Format("{0:0.##}", func.center_degree(1366, 768).Item1);
                 get_center_degree_ninety.Content = string.Format("{0:0.##}", func.center_degree(1366, 768).Item2);
+
+                get_pixel_slope.Content = string.Format("{0}", slope.height_768());
+                sc.get_sc_768(get_spin, get_curve);
 
                 if (isChecked == true)
                 {
@@ -677,5 +690,19 @@ namespace c_wpf_pangya_helper_v._1
                 func.set_pixel_move(get, 1920, 1080);
             }
         }
+
+        private void set_move_spin_curve(object sender, RoutedEventArgs e)
+        {
+
+            if (s1024x768.IsSelected || s1280x768.IsSelected || s1366x768.IsSelected)
+            {
+                int _spin = sc.set_sc_768(set_spin, set_curve).Item1;
+                int _curve = sc.set_sc_768(set_spin, set_curve).Item2;
+
+                func.movehelp(_curve, _spin);
+            }
+        }
     }
+
+
 }
