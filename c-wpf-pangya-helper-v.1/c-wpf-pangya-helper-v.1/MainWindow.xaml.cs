@@ -1,17 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Windows.Threading;
 
 namespace c_wpf_pangya_helper_v._1
@@ -78,6 +66,7 @@ namespace c_wpf_pangya_helper_v._1
                 get_center_degree_ninety.Content = string.Format("{0:0.##}", func.center_degree(1024, 768).Item2);
 
                 get_pixel_slope.Content = string.Format("{0}", slope.height_768());
+
                 sc.get_sc_768(get_spin, get_curve);
 
                 if (isChecked == true)
@@ -217,6 +206,9 @@ namespace c_wpf_pangya_helper_v._1
                 get_center_degree_zero.Content = string.Format("{0:0.##}", func.center_degree(1400, 900).Item1);
                 get_center_degree_ninety.Content = string.Format("{0:0.##}", func.center_degree(1400, 900).Item2);
 
+                get_pixel_slope.Content = string.Format("{0}", slope.height_900());
+                sc.get_sc_900(get_spin, get_curve);
+
                 if (isChecked == true)
                 {
                     get_pb.Content = string.Format("{0:0.##}", func.get_pb_value(1400, 67));
@@ -283,6 +275,9 @@ namespace c_wpf_pangya_helper_v._1
                 get_center_degree_zero.Content = string.Format("{0:0.##}", func.center_degree(1440, 900).Item1);
                 get_center_degree_ninety.Content = string.Format("{0:0.##}", func.center_degree(1440, 900).Item2);
 
+                get_pixel_slope.Content = string.Format("{0}", slope.height_900());
+                sc.get_sc_900(get_spin, get_curve);
+
                 if (isChecked == true)
                 {
                     get_pb.Content = string.Format("{0:0.##}", func.get_pb_value(1440, 67));
@@ -327,6 +322,9 @@ namespace c_wpf_pangya_helper_v._1
 
                 get_center_degree_zero.Content = string.Format("{0:0.##}", func.center_degree(1600, 900).Item1);
                 get_center_degree_ninety.Content = string.Format("{0:0.##}", func.center_degree(1600, 900).Item2);
+
+                get_pixel_slope.Content = string.Format("{0}", slope.height_900());
+                sc.get_sc_900(get_spin, get_curve);
 
                 if (isChecked == true)
                 {
@@ -698,6 +696,14 @@ namespace c_wpf_pangya_helper_v._1
             {
                 int _spin = sc.set_sc_768(set_spin, set_curve).Item1;
                 int _curve = sc.set_sc_768(set_spin, set_curve).Item2;
+
+                func.movehelp(_curve, _spin);
+            }
+
+            if (s1400x900.IsSelected || s1440x900.IsSelected || s1600x900.IsSelected)
+            {
+                int _spin = sc.set_sc_900(set_spin, set_curve).Item1;
+                int _curve = sc.set_sc_900(set_spin, set_curve).Item2;
 
                 func.movehelp(_curve, _spin);
             }
