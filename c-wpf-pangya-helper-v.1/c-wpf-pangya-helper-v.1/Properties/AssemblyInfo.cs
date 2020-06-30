@@ -5,12 +5,12 @@ using System.Windows;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("c-wpf-pangya-helper-v.1")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("PangyaHelper Ver 1.2")]
+[assembly: AssemblyDescription("pangya-helper</>")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("c-wpf-pangya-helper-v.1")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyProduct("pangya-helper</>")]
+[assembly: AssemblyCopyright("Copyright © 2020 by sukitte itte")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

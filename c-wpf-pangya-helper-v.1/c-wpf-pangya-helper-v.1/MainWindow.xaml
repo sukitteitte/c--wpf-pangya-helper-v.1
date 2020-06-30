@@ -9,7 +9,7 @@
         FontSize="11"
         FontFamily="Roboto"
         Foreground="White"
-        Title="MainWindow" Height="330" Width="280" ResizeMode="NoResize" Visibility="Visible" WindowStyle="ToolWindow">
+        Title="" Height="385" Width="280" ResizeMode="NoResize" Visibility="Visible" WindowStyle="ToolWindow">
     <Window.Background>
         <SolidColorBrush Color="#FFD1BCCB" Opacity="0.6"/>
     </Window.Background>
@@ -20,7 +20,6 @@
                 <Label Name="get_angle_degree_zero" Content="0°" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-80,0,0,0"/>
                 <Label Content="Angle-90°" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-160,20,0,0"/>
                 <Label Name="get_angle_degree_ninety" Content="0°" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-80,20,0,0"/>
-
                 <Label Content="Center-0°" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="100,0,0,0"/>
                 <Label Name="get_center_degree_zero" Content="0°" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="180,0,0,0"/>
                 <Label Content="Center-90°" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="100,20,0,0"/>
@@ -57,7 +56,7 @@
 
                 <Label Content="Curve" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-210,20,0,0"/>
                 <TextBox Name="set_curve" Text="0" Width="30" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-140,25,0,0"/>
-                <Button Content="Move" Width="40" Height="35"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-50,5,0,0" Background="#FF4AFF53" Click="set_move_spin_curve"/>
+                <Button Name="move_sc" Content="Move" Width="40" Height="35"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-50,5,0,0" Background="#FF4AFF53" Click="set_move_spin_curve"/>
 
                 <Label Content="Pb" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="25,0,0,0"/>
                 <TextBox Name="set_pb" Text="0" Width="40" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="95,5,0,0"/>
@@ -69,28 +68,39 @@
             </Grid>
         </GroupBox>
 
-        <GroupBox Header="Power Bar" Height="50" Width="130"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-130,220,0,0">
+        <GroupBox Header="exSpin" Height="50" Width="260"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,220,0,0">
+            <Grid>
+                <Button Name="mSpin_7" Content="7" Width="35" Height="20"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-200,5,0,0" Background="MediumAquamarine" Click="mSpin_7_Click"/>
+                <Button Name="mSpin_8" Content="8" Width="35" Height="20"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-120,5,0,0" Background="MediumAquamarine" Click="mSpin_8_Click"/>
+                <Button Name="mSpin_9" Content="9" Width="35" Height="20"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-40,5,0,0" Background="MediumAquamarine" Click="mSpin_9_Click"/>
+                <Button Name="mSpin_10" Content="10" Width="35" Height="20"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="40,5,0,0" Background="MediumAquamarine" Click="mSpin_10_Click"/>
+                <Button Name="mSpin_11" Content="11" Width="35" Height="20"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="120,5,0,0" Background="MediumAquamarine" Click="mSpin_11_Click"/>
+                <Button Name="mSpin_29" Content="29" Width="35" Height="20"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="200,5,0,0" Background="MediumAquamarine" Click="mSpin_29_Click"/>
+            </Grid>
+        </GroupBox>
+
+
+        <GroupBox Header="Power Bar" Height="50" Width="130"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-130,270,0,0">
             <Grid>
                 <CheckBox Name="powerbar" Content="Powerbar" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-20,0,0,0"/>
             </Grid>
         </GroupBox>
-
-        <GroupBox Header="Screen" Height="50" Width="130"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="130,220,0,0">
+        <GroupBox Header="Screen" Height="50" Width="130"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="130,270,0,0">
             <Grid>
                 <ComboBox Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                    <ComboBoxItem Name="s800x600">800x600</ComboBoxItem>
-                    <ComboBoxItem Name="s1024x768">1024x768</ComboBoxItem>
+                    <ComboBoxItem Background="LightPink" Name="s800x600">800x600</ComboBoxItem>
+                    <ComboBoxItem Background="DeepPink" Name="s1024x768">1024x768</ComboBoxItem>
                     <ComboBoxItem Name="s1280x960">1280x960</ComboBoxItem>
-                    <ComboBoxItem Name="s1280x720">1280x720</ComboBoxItem>
-                    <ComboBoxItem Name="s1280x768">1280x768</ComboBoxItem>
-                    <ComboBoxItem Name="s1280x800">1280x800</ComboBoxItem>
-                    <ComboBoxItem Name="s1366x768">1366x768</ComboBoxItem>
-                    <ComboBoxItem Name="s1400x900">1400x900</ComboBoxItem>
+                    <ComboBoxItem Background="LightPink" Name="s1280x720">1280x720</ComboBoxItem>
+                    <ComboBoxItem Background="DeepPink" Name="s1280x768">1280x768</ComboBoxItem>
+                    <ComboBoxItem Background="LightPink" Name="s1280x800">1280x800</ComboBoxItem>
+                    <ComboBoxItem Background="DeepPink" Name="s1366x768">1366x768</ComboBoxItem>
+                    <ComboBoxItem Background="DeepPink" Name="s1400x900">1400x900</ComboBoxItem>
                     <ComboBoxItem Name="s1440x990">1440x990</ComboBoxItem>
                     <ComboBoxItem Name="s1400x1050">1400x1050</ComboBoxItem>
-                    <ComboBoxItem Name="s1440x900">1440x900</ComboBoxItem>
+                    <ComboBoxItem Background="DeepPink" Name="s1440x900">1440x900</ComboBoxItem>
                     <ComboBoxItem Name="s1440x1050">1440x1050</ComboBoxItem>
-                    <ComboBoxItem Name="s1600x900">1600x900</ComboBoxItem>
+                    <ComboBoxItem Background="DeepPink" Name="s1600x900">1600x900</ComboBoxItem>
                     <ComboBoxItem Name="s1680x1050">1680x1050</ComboBoxItem>
                     <ComboBoxItem Name="s1920x1080">1920x1080</ComboBoxItem>
                 </ComboBox>

@@ -13,3 +13,18 @@ C:\Users\Admin\Desktop\c--wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\c-wpf-pa
 C:\Users\Admin\Desktop\c--wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\obj\Release\c-wpf-pangya-helper-v.1.exe
 C:\Users\Admin\Desktop\c--wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\obj\Release\c-wpf-pangya-helper-v.1.pdb
 C:\Users\Admin\Desktop\c--wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\obj\Release\c-wpf-pangya-helper-v.1.csprojAssemblyReference.cache
+C:\Users\ukob aw ikus\Desktop\c--wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\obj\Release\c-wpf-pangya-helper-v.1.csprojAssemblyReference.cache
+C:\Users\ukob aw ikus\Desktop\c--wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\obj\Release\MainWindow.g.cs
+C:\Users\ukob aw ikus\Desktop\c--wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\obj\Release\App.g.cs
+C:\Users\ukob aw ikus\Desktop\c--wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\obj\Release\MainWindow.baml
+C:\Users\ukob aw ikus\Desktop\c--wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\obj\Release\c_wpf_pangya_helper_v._1.Properties.Resources.resources
+C:\Users\ukob aw ikus\Desktop\c--wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\obj\Release\c-wpf-pangya-helper-v.1.csproj.GenerateResource.cache
+C:\Users\ukob aw ikus\Desktop\c--wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\obj\Release\c-wpf-pangya-helper-v.1.csproj.CoreCompileInputs.cache
+C:\Users\ukob aw ikus\Desktop\c--wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\bin\Release\pangya-helper-v.1.2.exe.config
+C:\Users\ukob aw ikus\Desktop\c--wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\bin\Release\pangya-helper-v.1.2.exe
+C:\Users\ukob aw ikus\Desktop\c--wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\bin\Release\pangya-helper-v.1.2.pdb
+C:\Users\ukob aw ikus\Desktop\c--wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\obj\Release\pangya-helper-v.1.2_MarkupCompile.cache
+C:\Users\ukob aw ikus\Desktop\c--wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\obj\Release\pangya-helper-v.1.2.g.resources
+C:\Users\ukob aw ikus\Desktop\c--wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\obj\Release\pangya-helper-v.1.2.exe
+C:\Users\ukob aw ikus\Desktop\c--wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\obj\Release\pangya-helper-v.1.2.pdb
+C:\Users\ukob aw ikus\Desktop\c--wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\c-wpf-pangya-helper-v.1\obj\Release\pangya-helper-v.1.2_MarkupCompile.lref

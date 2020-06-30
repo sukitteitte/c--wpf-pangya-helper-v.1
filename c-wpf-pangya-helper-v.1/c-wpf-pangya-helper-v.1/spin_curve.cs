@@ -1842,7 +1842,132 @@ namespace c_wpf_pangya_helper_v._1
             return Tuple.Create(spiny, curvex);
         }
 
+        public void get_sc_small_support(Label spin, Label curve ,double smallspin_Y) {
 
+            double x = func.position_pangya_screen().x;
+            double y = func.position_pangya_screen().y;
+
+
+            if (y == (535 + smallspin_Y))
+            {
+                spin.Content = "-7";
+            }
+            else if (y == (549 + smallspin_Y))
+            {
+                spin.Content = "7";
+            }
+            else if (y == (534 + smallspin_Y))
+            {
+                spin.Content = "-8";
+            }
+            else if (y == (550 + smallspin_Y))
+            {
+                spin.Content = "8";
+            }
+            else if (y == (533 + smallspin_Y))
+            {
+                spin.Content = "-9";
+            }
+            else if (y == (551 + smallspin_Y))
+            {
+                spin.Content = "9";
+            }
+            else if (y == (532 + smallspin_Y))
+            {
+                spin.Content = "-10";
+            }
+            else if (y == (552 + smallspin_Y))
+            {
+                spin.Content = "10";
+            }
+            else if (y == (531 + smallspin_Y))
+            {
+                spin.Content = "-11";
+            }
+            else if (y == (553 + smallspin_Y))
+            {
+                spin.Content = "11";
+            }
+            else if (y == (513 + smallspin_Y))
+            {
+                spin.Content = "-29";
+            }
+            else if (y == (571 + smallspin_Y))
+            {
+                spin.Content = "29";
+            }
+            else{
+                spin.Content = "0";
+            }
+
+            if (x == 58) {
+                curve.Content = "0";
+            }
+
+        }
+
+        public Tuple<int, int> set_smallspin(TextBox spin, TextBox curve, int smallspin_Y) {
+
+            int spiny = 0;
+            int curvex = 0;
+
+            if (spin.Text == "-7")
+            {
+                spiny = 535+smallspin_Y;
+
+            }
+            else if (spin.Text == "7")
+            {
+                spiny = 549+smallspin_Y;
+            }
+            else if (spin.Text == "-8")
+            {
+                spiny = 534 + smallspin_Y;
+            }
+            else if (spin.Text == "8")
+            {
+                spiny = 550 + smallspin_Y;
+            }
+            else if (spin.Text == "-9")
+            {
+                spiny = 533 + smallspin_Y;
+            }
+            else if (spin.Text == "9")
+            {
+                spiny = 551 + smallspin_Y;
+            }
+            else if (spin.Text == "-10")
+            {
+                spiny = 532 + smallspin_Y;
+            }
+            else if (spin.Text == "10")
+            {
+                spiny = 552 + smallspin_Y;
+            }
+            else if (spin.Text == "-11")
+            {
+                spiny = 531 + smallspin_Y;
+            }
+            else if (spin.Text == "11")
+            {
+                spiny = 553 + smallspin_Y;
+            }
+            else if (spin.Text == "-29")
+            {
+                spiny = 513 + smallspin_Y;
+            }
+            else if (spin.Text == "29")
+            {
+                spiny = 571 + smallspin_Y;
+            }
+
+            if (curve.Text == "0") {
+                curvex = 58;
+            }
+
+
+            return Tuple.Create(spiny, curvex);
+        }
 
     }
 }
