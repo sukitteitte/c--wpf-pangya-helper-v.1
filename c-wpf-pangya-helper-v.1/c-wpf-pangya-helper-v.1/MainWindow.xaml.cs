@@ -92,12 +92,14 @@ namespace c_wpf_pangya_helper_v._1
                     get_pixel_slope.Content = string.Format("{0}", slope.height_768());
                     sc.get_sc_768(get_spin, get_curve);
                     move_sc.IsEnabled = true;
-                    /// mSpin_7.IsEnabled = true;
+                    ///
+                    mSpin_7.IsEnabled = true;
                     mSpin_8.IsEnabled = true;
                     mSpin_9.IsEnabled = true;
                     mSpin_10.IsEnabled = true;
                     mSpin_11.IsEnabled = true;
                     mSpin_29.IsEnabled = true;
+                    ///
                 }
                 else if (isChecked == false)
                 {
@@ -105,12 +107,14 @@ namespace c_wpf_pangya_helper_v._1
                     get_pixel_slope.Content = string.Format("{0}", slope.smallslopeall());
                     sc.get_sc_small_support(get_spin, get_curve, 168);
                     move_sc.IsEnabled = true;
+                    ///
                     mSpin_7.IsEnabled = true;
                     mSpin_8.IsEnabled = true;
                     mSpin_9.IsEnabled = true;
                     mSpin_10.IsEnabled = true;
                     mSpin_11.IsEnabled = true;
                     mSpin_29.IsEnabled = true;
+                    ///
                 }
 
                 get_pixel.Content = string.Format("{0:0.##}", func.get_pixel_value(1024));
@@ -185,6 +189,7 @@ namespace c_wpf_pangya_helper_v._1
                     get_pixel_slope.Content = string.Format("{0}", slope.smallslopeall());
                     sc.get_sc_small_support(get_spin, get_curve, 120);
                     move_sc.IsEnabled = true;
+                    ///
                     mSpin_7.IsEnabled = true;
                     mSpin_8.IsEnabled = true;
                     mSpin_9.IsEnabled = true;
@@ -1020,7 +1025,7 @@ namespace c_wpf_pangya_helper_v._1
                 //{
                 //    //
                 //}
-                 if (isChecked == false)
+                if (isChecked == false)
                 {
                     int _spin = sc.set_smallspin(set_spin, set_curve, 120).Item1;
                     int _curve = sc.set_smallspin(set_spin, set_curve, 120).Item2;
@@ -1051,7 +1056,7 @@ namespace c_wpf_pangya_helper_v._1
                 //{
                 //    //
                 //}
-                 if (isChecked == false)
+                if (isChecked == false)
                 {
                     int _spin = sc.set_smallspin(set_spin, set_curve, 200).Item1;
                     int _curve = sc.set_smallspin(set_spin, set_curve, 200).Item2;
@@ -1181,215 +1186,215 @@ namespace c_wpf_pangya_helper_v._1
 
         private void mSpin_7_Click(object sender, RoutedEventArgs e)
         {
-           
-                bool? isChecked = powerbar.IsChecked;
 
-                if (s800x600.IsSelected)
-                {
-                    //if (isChecked == true)
-                    //{
-                    //    //
-                    //}
-                    if (isChecked == false)
-                    {
-                        int _spin = 549;
-                        int _curve = 58;
+            bool? isChecked = powerbar.IsChecked;
 
-                        func.movehelp(_curve, _spin);
-                    };
-                }
-                else if (s1024x768.IsSelected)
-                {
-                    if (isChecked == true)
-                    {
-                    int _spin = 687;
-                    int _curve = 93;
-
-                    func.movehelp(_curve, _spin);
-                    }
-                    else if (isChecked == false)
-                    {
-                    int _spin = 549+168;
-                    int _curve = 58;
-
-                    func.movehelp(_curve, _spin);
-
-                }
-                }
-                //else if (s1280x960.IsSelected)
+            if (s800x600.IsSelected)
+            {
+                //if (isChecked == true)
                 //{
-                //    if (isChecked == true)
-                //    {
-                //        //
-                //    }
-                //    else if (isChecked == false){
-                //        //
-                //    }
+                //    //
                 //}
-                else if (s1280x720.IsSelected)
+                if (isChecked == false)
                 {
-                    //if (isChecked == true)
-                    //{
-                    //    //
-                    //}
-                    if (isChecked == false)
-                    {
-                    int _spin = 549+120;
+                    int _spin = 549;
                     int _curve = 58;
 
                     func.movehelp(_curve, _spin);
-                }
-                }
-                else if (s1280x768.IsSelected)
-                {
-                    if (isChecked == true)
-                    {
-                    int _spin = 687;
-                    int _curve = 93;
-
-                    func.movehelp(_curve, _spin);
-                }
-                    else if (isChecked == false)
-                    {
-                    int _spin = 549+168;
-                    int _curve = 58;
-
-                    func.movehelp(_curve, _spin);
-                }
-                }
-                else if (s1280x800.IsSelected)
-                {
-                    //if (isChecked == true)
-                    //{
-                    //    //
-                    //}
-                    if (isChecked == false)
-                    {
-                    int _spin = 549+200;
-                    int _curve = 58;
-
-                    func.movehelp(_curve, _spin);
-                }
-                }
-                else if (s1366x768.IsSelected)
-                {
-                    if (isChecked == true)
-                    {
-                    int _spin = 687;
-                    int _curve = 93;
-
-                    func.movehelp(_curve, _spin);
-                }
-                    else if (isChecked == false)
-                    {
-                    int _spin = 549+168;
-                    int _curve = 58;
-
-                    func.movehelp(_curve, _spin);
-                }
-                }
-                else if (s1400x900.IsSelected)
-                {
-                    if (isChecked == true)
-                    {
-                    int _spin = 805;
-                    int _curve = 109;
-
-                    func.movehelp(_curve, _spin);
-                }
-                    else if (isChecked == false)
-                    {
-                    int _spin = 549+300;
-                    int _curve = 58;
-
-                    func.movehelp(_curve, _spin);
-                }
-                }
-                //else if (s1440x990.IsSelected)
-                //{
-                //    if (isChecked == true)
-                //    {
-                //        //
-                //    }
-                //    else if (isChecked == false){
-                //       //
-                //    }
-                //}
-                //else if (s1400x1050.IsSelected)
-                //{
-                //    if (isChecked == true)
-                //    {
-                //       //
-                //    }
-                //    else if (isChecked == false){
-                //       //
-                //    }
-                //}
-                else if (s1440x900.IsSelected)
-                {
-                    if (isChecked == true)
-                    {
-                    int _spin = 805;
-                    int _curve = 109;
-
-                    func.movehelp(_curve, _spin);
-                }
-                    else if (isChecked == false)
-                    {
-                    int _spin = 549+300;
-                    int _curve = 58;
-
-                    func.movehelp(_curve, _spin);
-                }
-                }
-                //else if (s1440x1050.IsSelected)
-                //{
-                //    if (isChecked == true)
-                //    {
-                //       //
-                //    }
-                //    else if (isChecked == false){
-                //     //
-                //    }
-                //}
-                else if (s1600x900.IsSelected)
-                {
-                    if (isChecked == true)
-                    {
-                    int _spin = 805;
-                    int _curve = 109;
-
-                    func.movehelp(_curve, _spin);
-                }
-                    else if (isChecked == false)
-                    {
-                    int _spin = 549+300;
-                    int _curve = 58;
-
-                    func.movehelp(_curve, _spin);
-                }
-                }
-                //else if (s1680x1050.IsSelected)
-                //{
-                //    if (isChecked == true)
-                //    {
-                //        //
-                //    }
-                //    else if (isChecked == false){
-                //       //
-                //    }
-                //}
-                //else if (s1920x1080.IsSelected)
-                //{
-                //    if (isChecked == true)
-                //    {
-                //        //
-                //    }
-                //    else if (isChecked == false){
-                //        //
-                //    }
-                //}
+                };
             }
+            else if (s1024x768.IsSelected)
+            {
+                if (isChecked == true)
+                {
+                    int _spin = 687;
+                    int _curve = 93;
+
+                    func.movehelp(_curve, _spin);
+                }
+                else if (isChecked == false)
+                {
+                    int _spin = 549 + 168;
+                    int _curve = 58;
+
+                    func.movehelp(_curve, _spin);
+
+                }
+            }
+            //else if (s1280x960.IsSelected)
+            //{
+            //    if (isChecked == true)
+            //    {
+            //        //
+            //    }
+            //    else if (isChecked == false){
+            //        //
+            //    }
+            //}
+            else if (s1280x720.IsSelected)
+            {
+                //if (isChecked == true)
+                //{
+                //    //
+                //}
+                if (isChecked == false)
+                {
+                    int _spin = 549 + 120;
+                    int _curve = 58;
+
+                    func.movehelp(_curve, _spin);
+                }
+            }
+            else if (s1280x768.IsSelected)
+            {
+                if (isChecked == true)
+                {
+                    int _spin = 687;
+                    int _curve = 93;
+
+                    func.movehelp(_curve, _spin);
+                }
+                else if (isChecked == false)
+                {
+                    int _spin = 549 + 168;
+                    int _curve = 58;
+
+                    func.movehelp(_curve, _spin);
+                }
+            }
+            else if (s1280x800.IsSelected)
+            {
+                //if (isChecked == true)
+                //{
+                //    //
+                //}
+                if (isChecked == false)
+                {
+                    int _spin = 549 + 200;
+                    int _curve = 58;
+
+                    func.movehelp(_curve, _spin);
+                }
+            }
+            else if (s1366x768.IsSelected)
+            {
+                if (isChecked == true)
+                {
+                    int _spin = 687;
+                    int _curve = 93;
+
+                    func.movehelp(_curve, _spin);
+                }
+                else if (isChecked == false)
+                {
+                    int _spin = 549 + 168;
+                    int _curve = 58;
+
+                    func.movehelp(_curve, _spin);
+                }
+            }
+            else if (s1400x900.IsSelected)
+            {
+                if (isChecked == true)
+                {
+                    int _spin = 805;
+                    int _curve = 109;
+
+                    func.movehelp(_curve, _spin);
+                }
+                else if (isChecked == false)
+                {
+                    int _spin = 549 + 300;
+                    int _curve = 58;
+
+                    func.movehelp(_curve, _spin);
+                }
+            }
+            //else if (s1440x990.IsSelected)
+            //{
+            //    if (isChecked == true)
+            //    {
+            //        //
+            //    }
+            //    else if (isChecked == false){
+            //       //
+            //    }
+            //}
+            //else if (s1400x1050.IsSelected)
+            //{
+            //    if (isChecked == true)
+            //    {
+            //       //
+            //    }
+            //    else if (isChecked == false){
+            //       //
+            //    }
+            //}
+            else if (s1440x900.IsSelected)
+            {
+                if (isChecked == true)
+                {
+                    int _spin = 805;
+                    int _curve = 109;
+
+                    func.movehelp(_curve, _spin);
+                }
+                else if (isChecked == false)
+                {
+                    int _spin = 549 + 300;
+                    int _curve = 58;
+
+                    func.movehelp(_curve, _spin);
+                }
+            }
+            //else if (s1440x1050.IsSelected)
+            //{
+            //    if (isChecked == true)
+            //    {
+            //       //
+            //    }
+            //    else if (isChecked == false){
+            //     //
+            //    }
+            //}
+            else if (s1600x900.IsSelected)
+            {
+                if (isChecked == true)
+                {
+                    int _spin = 805;
+                    int _curve = 109;
+
+                    func.movehelp(_curve, _spin);
+                }
+                else if (isChecked == false)
+                {
+                    int _spin = 549 + 300;
+                    int _curve = 58;
+
+                    func.movehelp(_curve, _spin);
+                }
+            }
+            //else if (s1680x1050.IsSelected)
+            //{
+            //    if (isChecked == true)
+            //    {
+            //        //
+            //    }
+            //    else if (isChecked == false){
+            //       //
+            //    }
+            //}
+            //else if (s1920x1080.IsSelected)
+            //{
+            //    if (isChecked == true)
+            //    {
+            //        //
+            //    }
+            //    else if (isChecked == false){
+            //        //
+            //    }
+            //}
+        }
 
         private void mSpin_8_Click(object sender, RoutedEventArgs e)
         {
@@ -2447,5 +2452,5 @@ namespace c_wpf_pangya_helper_v._1
             //}
         }
     }
-    
+
 }

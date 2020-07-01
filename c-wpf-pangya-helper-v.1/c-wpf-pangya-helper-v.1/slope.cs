@@ -12,17 +12,17 @@ namespace c_wpf_pangya_helper_v._1
         {
             double get_pixel_value = 0;
 
-                if (func.position_pangya_screen().x >= 44 && func.position_pangya_screen().x <= 92)
+                if (func.position_pangya_screen().x >= 43 && func.position_pangya_screen().x <= 92)
                 {
                     double x = func.position_pangya_screen().x;
-                    get_pixel_value = Math.Abs((44) - Math.Abs(x));
+                    get_pixel_value = Math.Abs((43) - Math.Abs(x));
 
                 }
 
-                else if (func.position_pangya_screen().x <= 141 && func.position_pangya_screen().x >= 93)
+                else if (func.position_pangya_screen().x <= 142 && func.position_pangya_screen().x >= 93)
                 {
                     double x = func.position_pangya_screen().x;
-                    get_pixel_value = Math.Abs((141) - Math.Abs(x));
+                    get_pixel_value = Math.Abs((142) - Math.Abs(x));
 
                 }
             
@@ -34,17 +34,17 @@ namespace c_wpf_pangya_helper_v._1
         {
             double get_pixel_value = 0;
           
-                if (func.position_pangya_screen().x >= 52 && func.position_pangya_screen().x <= 108)
+                if (func.position_pangya_screen().x >= 51 && func.position_pangya_screen().x <= 108)
                 {
                     double x = func.position_pangya_screen().x;
-                    get_pixel_value = Math.Abs((52) - Math.Abs(x));
+                    get_pixel_value = Math.Abs((51) - Math.Abs(x));
 
                 }
 
-                else if (func.position_pangya_screen().x <= 165 && func.position_pangya_screen().x >= 109)
+                else if (func.position_pangya_screen().x <= 166 && func.position_pangya_screen().x >= 109)
                 {
                     double x = func.position_pangya_screen().x;
-                    get_pixel_value = Math.Abs((165) - Math.Abs(x));
+                    get_pixel_value = Math.Abs((166) - Math.Abs(x));
 
                 }
             
@@ -55,17 +55,17 @@ namespace c_wpf_pangya_helper_v._1
             double get_pixel_value = 0;
 
             
-                if (func.position_pangya_screen().x >= 28 && func.position_pangya_screen().x <= 58)
+                if (func.position_pangya_screen().x >= 27 && func.position_pangya_screen().x <= 58)
                 {
                     double x = func.position_pangya_screen().x;
-                    get_pixel_value = Math.Abs((28) - Math.Abs(x));
+                    get_pixel_value = Math.Abs((27) - Math.Abs(x));
 
                 }
 
-                else if (func.position_pangya_screen().x <= 88 && func.position_pangya_screen().x >= 58)
+                else if (func.position_pangya_screen().x <= 89 && func.position_pangya_screen().x >= 58)
                 {
                     double x = func.position_pangya_screen().x;
-                    get_pixel_value = Math.Abs((88) - Math.Abs(x));
+                    get_pixel_value = Math.Abs((89) - Math.Abs(x));
 
                 }
             
