@@ -1842,6 +1842,87 @@ namespace c_wpf_pangya_helper_v._1
             return Tuple.Create(spiny, curvex);
         }
 
+        public void get_sc_960(Label spin, Label curve)
+        {
+
+            double x = func.position_pangya_screen().x;
+            double y = func.position_pangya_screen().y;
+
+            //spin
+
+                ////
+
+            if (y == 829)
+            {
+                spin.Content = "-7";
+            }
+            else if (y == 828)
+            {
+                spin.Content = "-8";
+            }
+            else if (y == 826)
+            {
+                spin.Content = "-9";
+            }
+            else if (y == 823)
+            {
+                spin.Content = "-10";
+            }
+            else if (y == 822)
+            {
+                spin.Content = "-11";
+            }
+            else if (y == 804)
+            {
+                spin.Content = "-20";
+            }
+            else if (y == 786)
+            {
+                spin.Content = "-29";
+            }
+            else if (y == 857)
+            {
+                spin.Content = "7";
+            }
+            else if (y == 859)
+            {
+                spin.Content = "8";
+            }
+            else if (y == 862)
+            {
+                spin.Content = "9";
+            }
+            else if (y == 864)
+            {
+                spin.Content = "10";
+            }
+            else if (y == 866)
+            {
+                spin.Content = "11";
+            }
+            else if (y == 884)
+            {
+                spin.Content = "20";
+            }
+            else if (y == 902)
+            {
+                spin.Content = "29";
+            }
+            else
+            {
+                spin.Content = "0";
+            }
+            //curve
+            if (x == 116)
+            {
+                curve.Content = "0";
+            }
+            else
+            {
+                curve.Content = "0";
+            }
+        }
+
         public void get_sc_small_support(Label spin, Label curve ,double smallspin_Y) {
 
             double x = func.position_pangya_screen().x;

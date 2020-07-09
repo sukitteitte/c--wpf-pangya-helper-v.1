@@ -54,6 +54,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = false;
                     mSpin_10.IsEnabled = false;
                     mSpin_11.IsEnabled = false;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = false;
                     ///
                 }
@@ -69,6 +70,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = true;
                     mSpin_10.IsEnabled = true;
                     mSpin_11.IsEnabled = true;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = true;
                     ///
                 }
@@ -98,6 +100,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = true;
                     mSpin_10.IsEnabled = true;
                     mSpin_11.IsEnabled = true;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = true;
                     ///
                 }
@@ -113,6 +116,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = true;
                     mSpin_10.IsEnabled = true;
                     mSpin_11.IsEnabled = true;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = true;
                     ///
                 }
@@ -133,19 +137,23 @@ namespace c_wpf_pangya_helper_v._1
                 if (isChecked == true)
                 {
                     get_pb.Content = string.Format("{0:0.##}", func.get_pb_value(1280, 72));
+                    get_pixel_slope.Content = string.Format("{0}", slope.height_960());
+                    sc.get_sc_960(get_spin, get_curve);
                     move_sc.IsEnabled = false;
                     ///
-                    mSpin_7.IsEnabled = false;
-                    mSpin_8.IsEnabled = false;
-                    mSpin_9.IsEnabled = false;
-                    mSpin_10.IsEnabled = false;
-                    mSpin_11.IsEnabled = false;
-                    mSpin_29.IsEnabled = false;
+                    mSpin_7.IsEnabled = true;
+                    mSpin_8.IsEnabled = true;
+                    mSpin_9.IsEnabled = true;
+                    mSpin_10.IsEnabled = true;
+                    mSpin_11.IsEnabled = true;
+                    mSpin_20.IsEnabled = true;
+                    mSpin_29.IsEnabled = true;
                     ///
                 }
                 else if (isChecked == false)
                 {
                     get_pb.Content = string.Format("{0:0.##}", func.get_pb_value(1280, 72));
+                    sc.get_sc_960(get_spin, get_curve);
                     move_sc.IsEnabled = false;
                     ///
                     mSpin_7.IsEnabled = false;
@@ -153,6 +161,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = false;
                     mSpin_10.IsEnabled = false;
                     mSpin_11.IsEnabled = false;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = false;
                     ///
                 }
@@ -180,6 +189,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = false;
                     mSpin_10.IsEnabled = false;
                     mSpin_11.IsEnabled = false;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = false;
                     ///
                 }
@@ -195,6 +205,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = true;
                     mSpin_10.IsEnabled = true;
                     mSpin_11.IsEnabled = true;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = true;
                 }
                 get_pixel.Content = string.Format("{0:0.##}", func.get_pixel_value(1280));
@@ -222,6 +233,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = true;
                     mSpin_10.IsEnabled = true;
                     mSpin_11.IsEnabled = true;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = true;
                     ///
                 }
@@ -237,6 +249,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = true;
                     mSpin_10.IsEnabled = true;
                     mSpin_11.IsEnabled = true;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = true;
                     ///
                 }
@@ -263,6 +276,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = false;
                     mSpin_10.IsEnabled = false;
                     mSpin_11.IsEnabled = false;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = false;
                     ///
 
@@ -279,6 +293,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = true;
                     mSpin_10.IsEnabled = true;
                     mSpin_11.IsEnabled = true;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = true;
                     ///
                 }
@@ -310,6 +325,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = true;
                     mSpin_10.IsEnabled = true;
                     mSpin_11.IsEnabled = true;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = true;
                     ///
                 }
@@ -325,6 +341,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = true;
                     mSpin_10.IsEnabled = true;
                     mSpin_11.IsEnabled = true;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = true;
                     ///
                 }
@@ -354,6 +371,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = true;
                     mSpin_10.IsEnabled = true;
                     mSpin_11.IsEnabled = true;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = true;
                     ///
                 }
@@ -369,6 +387,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = true;
                     mSpin_10.IsEnabled = true;
                     mSpin_11.IsEnabled = true;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = true;
                     ///
                 }
@@ -396,6 +415,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = false;
                     mSpin_10.IsEnabled = false;
                     mSpin_11.IsEnabled = false;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = false;
                     ///
                 }
@@ -409,6 +429,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = false;
                     mSpin_10.IsEnabled = false;
                     mSpin_11.IsEnabled = false;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = false;
                     ///
                 }
@@ -436,6 +457,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = false;
                     mSpin_10.IsEnabled = false;
                     mSpin_11.IsEnabled = false;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = false;
                     ///
                 }
@@ -449,6 +471,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = false;
                     mSpin_10.IsEnabled = false;
                     mSpin_11.IsEnabled = false;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = false;
                     ///
                 }
@@ -479,6 +502,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = true;
                     mSpin_10.IsEnabled = true;
                     mSpin_11.IsEnabled = true;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = true;
                     ///
                 }
@@ -494,6 +518,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = true;
                     mSpin_10.IsEnabled = true;
                     mSpin_11.IsEnabled = true;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = true;
                     ///
                 }
@@ -521,6 +546,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = false;
                     mSpin_10.IsEnabled = false;
                     mSpin_11.IsEnabled = false;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = false;
                     ///
                 }
@@ -534,6 +560,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = false;
                     mSpin_10.IsEnabled = false;
                     mSpin_11.IsEnabled = false;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = false;
                     ///
                 }
@@ -564,6 +591,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = true;
                     mSpin_10.IsEnabled = true;
                     mSpin_11.IsEnabled = true;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = true;
                     ///
                 }
@@ -579,6 +607,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = true;
                     mSpin_10.IsEnabled = true;
                     mSpin_11.IsEnabled = true;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = true;
                     ///
                 }
@@ -607,6 +636,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = false;
                     mSpin_10.IsEnabled = false;
                     mSpin_11.IsEnabled = false;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = false;
                     ///
                 }
@@ -620,6 +650,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = false;
                     mSpin_10.IsEnabled = false;
                     mSpin_11.IsEnabled = false;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = false;
                     ///
                 }
@@ -646,6 +677,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = false;
                     mSpin_10.IsEnabled = false;
                     mSpin_11.IsEnabled = false;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = false;
                     ///
                 }
@@ -659,6 +691,7 @@ namespace c_wpf_pangya_helper_v._1
                     mSpin_9.IsEnabled = false;
                     mSpin_10.IsEnabled = false;
                     mSpin_11.IsEnabled = false;
+                    mSpin_20.IsEnabled = false;
                     mSpin_29.IsEnabled = false;
                     ///
                 }
@@ -1207,7 +1240,7 @@ namespace c_wpf_pangya_helper_v._1
             {
                 if (isChecked == true)
                 {
-                    int _spin = 687;
+                    int _spin = 686;
                     int _curve = 93;
 
                     func.movehelp(_curve, _spin);
@@ -1221,16 +1254,23 @@ namespace c_wpf_pangya_helper_v._1
 
                 }
             }
-            //else if (s1280x960.IsSelected)
-            //{
-            //    if (isChecked == true)
-            //    {
-            //        //
-            //    }
-            //    else if (isChecked == false){
-            //        //
-            //    }
-            //}
+            else if (s1280x960.IsSelected)
+            {
+                if (isChecked == true)
+                {
+                    int _spin = 857;
+                    int _curve = 116;
+
+                    func.movehelp(_curve, _spin);
+                }
+                else if (isChecked == false)
+                {
+                    int _spin = 857;
+                    int _curve = 116;
+
+                    func.movehelp(_curve, _spin);
+                }
+            }
             else if (s1280x720.IsSelected)
             {
                 //if (isChecked == true)
@@ -1249,7 +1289,7 @@ namespace c_wpf_pangya_helper_v._1
             {
                 if (isChecked == true)
                 {
-                    int _spin = 687;
+                    int _spin = 686;
                     int _curve = 93;
 
                     func.movehelp(_curve, _spin);
@@ -1280,7 +1320,7 @@ namespace c_wpf_pangya_helper_v._1
             {
                 if (isChecked == true)
                 {
-                    int _spin = 687;
+                    int _spin = 686;
                     int _curve = 93;
 
                     func.movehelp(_curve, _spin);
@@ -1432,16 +1472,23 @@ namespace c_wpf_pangya_helper_v._1
 
                 }
             }
-            //else if (s1280x960.IsSelected)
-            //{
-            //    if (isChecked == true)
-            //    {
-            //        //
-            //    }
-            //    else if (isChecked == false){
-            //        //
-            //    }
-            //}
+            else if (s1280x960.IsSelected)
+            {
+                if (isChecked == true)
+                {
+                    int _spin = 859;
+                    int _curve = 116;
+
+                    func.movehelp(_curve, _spin);
+                }
+                else if (isChecked == false)
+                {
+                    int _spin = 859;
+                    int _curve = 116;
+
+                    func.movehelp(_curve, _spin);
+                }
+            }
             else if (s1280x720.IsSelected)
             {
                 //if (isChecked == true)
@@ -1629,7 +1676,7 @@ namespace c_wpf_pangya_helper_v._1
             {
                 if (isChecked == true)
                 {
-                    int _spin = 690;
+                    int _spin = 689;
                     int _curve = 93;
 
                     func.movehelp(_curve, _spin);
@@ -1643,16 +1690,23 @@ namespace c_wpf_pangya_helper_v._1
 
                 }
             }
-            //else if (s1280x960.IsSelected)
-            //{
-            //    if (isChecked == true)
-            //    {
-            //        //
-            //    }
-            //    else if (isChecked == false){
-            //        //
-            //    }
-            //}
+            else if (s1280x960.IsSelected)
+            {
+                if (isChecked == true)
+                {
+                    int _spin = 862;
+                    int _curve = 116;
+
+                    func.movehelp(_curve, _spin);
+                }
+                else if (isChecked == false)
+                {
+                    int _spin = 862;
+                    int _curve = 116;
+
+                    func.movehelp(_curve, _spin);
+                }
+            }
             else if (s1280x720.IsSelected)
             {
                 //if (isChecked == true)
@@ -1671,7 +1725,7 @@ namespace c_wpf_pangya_helper_v._1
             {
                 if (isChecked == true)
                 {
-                    int _spin = 690;
+                    int _spin = 689;
                     int _curve = 93;
 
                     func.movehelp(_curve, _spin);
@@ -1702,7 +1756,7 @@ namespace c_wpf_pangya_helper_v._1
             {
                 if (isChecked == true)
                 {
-                    int _spin = 690;
+                    int _spin = 689;
                     int _curve = 93;
 
                     func.movehelp(_curve, _spin);
@@ -1841,7 +1895,7 @@ namespace c_wpf_pangya_helper_v._1
             {
                 if (isChecked == true)
                 {
-                    int _spin = 692;
+                    int _spin = 691;
                     int _curve = 93;
 
                     func.movehelp(_curve, _spin);
@@ -1855,16 +1909,23 @@ namespace c_wpf_pangya_helper_v._1
 
                 }
             }
-            //else if (s1280x960.IsSelected)
-            //{
-            //    if (isChecked == true)
-            //    {
-            //        //
-            //    }
-            //    else if (isChecked == false){
-            //        //
-            //    }
-            //}
+            else if (s1280x960.IsSelected)
+            {
+                if (isChecked == true)
+                {
+                    int _spin = 864;
+                    int _curve = 116;
+
+                    func.movehelp(_curve, _spin);
+                }
+                else if (isChecked == false)
+                {
+                    int _spin = 864;
+                    int _curve = 116;
+
+                    func.movehelp(_curve, _spin);
+                }
+            }
             else if (s1280x720.IsSelected)
             {
                 //if (isChecked == true)
@@ -1883,7 +1944,7 @@ namespace c_wpf_pangya_helper_v._1
             {
                 if (isChecked == true)
                 {
-                    int _spin = 692;
+                    int _spin = 691;
                     int _curve = 93;
 
                     func.movehelp(_curve, _spin);
@@ -1914,7 +1975,7 @@ namespace c_wpf_pangya_helper_v._1
             {
                 if (isChecked == true)
                 {
-                    int _spin = 692;
+                    int _spin = 691;
                     int _curve = 93;
 
                     func.movehelp(_curve, _spin);
@@ -2066,16 +2127,23 @@ namespace c_wpf_pangya_helper_v._1
 
                 }
             }
-            //else if (s1280x960.IsSelected)
-            //{
-            //    if (isChecked == true)
-            //    {
-            //        //
-            //    }
-            //    else if (isChecked == false){
-            //        //
-            //    }
-            //}
+            else if (s1280x960.IsSelected)
+            {
+                if (isChecked == true)
+                {
+                    int _spin = 866;
+                    int _curve = 116;
+
+                    func.movehelp(_curve, _spin);
+                }
+                else if (isChecked == false)
+                {
+                    int _spin = 866;
+                    int _curve = 116;
+
+                    func.movehelp(_curve, _spin);
+                }
+            }
             else if (s1280x720.IsSelected)
             {
                 //if (isChecked == true)
@@ -2277,16 +2345,23 @@ namespace c_wpf_pangya_helper_v._1
 
                 }
             }
-            //else if (s1280x960.IsSelected)
-            //{
-            //    if (isChecked == true)
-            //    {
-            //        //
-            //    }
-            //    else if (isChecked == false){
-            //        //
-            //    }
-            //}
+            else if (s1280x960.IsSelected)
+            {
+                if (isChecked == true)
+                {
+                    int _spin = 902;
+                    int _curve = 116;
+
+                    func.movehelp(_curve, _spin);
+                }
+                else if (isChecked == false)
+                {
+                    int _spin = 902;
+                    int _curve = 116;
+
+                    func.movehelp(_curve, _spin);
+                }
+            }
             else if (s1280x720.IsSelected)
             {
                 //if (isChecked == true)
@@ -2450,6 +2525,29 @@ namespace c_wpf_pangya_helper_v._1
             //        //
             //    }
             //}
+        }
+
+        private void mSpin_20_Click(object sender, RoutedEventArgs e)
+        {
+            bool? isChecked = powerbar.IsChecked;
+
+            if (s1280x960.IsSelected)
+            {
+                if (isChecked == true)
+                {
+                    int _spin = 884;
+                    int _curve = 116;
+
+                    func.movehelp(_curve, _spin);
+                }
+                else if (isChecked == false)
+                {
+                    int _spin = 884;
+                    int _curve = 116;
+
+                    func.movehelp(_curve, _spin);
+                }
+            }
         }
     }
 

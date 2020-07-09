@@ -9,7 +9,7 @@
         FontSize="11"
         FontFamily="Roboto"
         Foreground="White"
-        Title="" Height="385" Width="280" ResizeMode="NoResize" Visibility="Visible" WindowStyle="ToolWindow">
+        Title="" Height="405" Width="280" ResizeMode="NoResize" Visibility="Visible" WindowStyle="ToolWindow">
     <Window.Background>
         <SolidColorBrush Color="#FFD1BCCB" Opacity="0.6"/>
     </Window.Background>
@@ -68,7 +68,7 @@
             </Grid>
         </GroupBox>
 
-        <GroupBox Header="exSpin" Height="50" Width="260"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,220,0,0">
+        <GroupBox Header="exSpin" Height="75" Width="260"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,220,0,0">
             <Grid>
                 <Button Name="mSpin_7" Content="7" Width="35" Height="20"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-200,5,0,0" Background="MediumAquamarine" Click="mSpin_7_Click"/>
                 <Button Name="mSpin_8" Content="8" Width="35" Height="20"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-120,5,0,0" Background="MediumAquamarine" Click="mSpin_8_Click"/>
@@ -76,21 +76,22 @@
                 <Button Name="mSpin_10" Content="10" Width="35" Height="20"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="40,5,0,0" Background="MediumAquamarine" Click="mSpin_10_Click"/>
                 <Button Name="mSpin_11" Content="11" Width="35" Height="20"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="120,5,0,0" Background="MediumAquamarine" Click="mSpin_11_Click"/>
                 <Button Name="mSpin_29" Content="29" Width="35" Height="20"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="200,5,0,0" Background="MediumAquamarine" Click="mSpin_29_Click"/>
+                <Button Name="mSpin_20" Content="20" Width="35" Height="20"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-200,30,0,0" Background="MediumAquamarine" Click="mSpin_20_Click"/>
             </Grid>
         </GroupBox>
 
 
-        <GroupBox Header="Power Bar" Height="50" Width="130"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-130,270,0,0">
+        <GroupBox Header="Power Bar" Height="50" Width="130"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-130,300,0,0">
             <Grid>
                 <CheckBox Name="powerbar" Content="Powerbar" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-20,0,0,0"/>
             </Grid>
         </GroupBox>
-        <GroupBox Header="Screen" Height="50" Width="130"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="130,270,0,0">
+        <GroupBox Header="Screen" Height="50" Width="130"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="130,300,0,0">
             <Grid>
                 <ComboBox Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
                     <ComboBoxItem Background="LightPink" Name="s800x600">800x600</ComboBoxItem>
                     <ComboBoxItem Background="DeepPink" Name="s1024x768">1024x768</ComboBoxItem>
-                    <ComboBoxItem Name="s1280x960">1280x960</ComboBoxItem>
+                    <ComboBoxItem Background="LightBlue"  Name="s1280x960">1280x960</ComboBoxItem> <!--spin 20 special-->
                     <ComboBoxItem Background="LightPink" Name="s1280x720">1280x720</ComboBoxItem>
                     <ComboBoxItem Background="DeepPink" Name="s1280x768">1280x768</ComboBoxItem>
                     <ComboBoxItem Background="LightPink" Name="s1280x800">1280x800</ComboBoxItem>
